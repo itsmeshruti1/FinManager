@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Personal Finance Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">Fin<span>Manager</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Dashboard</a></li>
+                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="budgets.html">Budgets</a></li>
+            </ul>
+        </aside>
+        
+        <main class="main-content">
+            <header class="page-header">
+                <h1 class="page-title">Overview</h1>
+            </header>
+
+            <div id="alerts-container"></div>
+
+            <div class="dashboard-grid">
+                <div class="stat-card">
+                    <div class="stat-title">Total Balance</div>
+                    <div class="stat-value" id="total-balance">$0.00</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Income (This Month)</div>
+                    <div class="stat-value positive" id="total-income">+$0.00</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Expenses (This Month)</div>
+                    <div class="stat-value negative" id="total-expense">-$0.00</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Spending by Category</h3>
+                <div style="position: relative; height: 300px; width: 100%;">
+                    <canvas id="spendingChart"></canvas>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Recent Transactions</h3>
+                <ul class="transaction-list" id="recent-transactions">
+                    <!-- Transactions injected here -->
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

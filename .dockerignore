@@ -1,0 +1,7 @@
+backend/venv/
+backend/__pycache__/
+backend/.env
+backend/finance.db
+.git/
+.gitignore
+.dockerignore
