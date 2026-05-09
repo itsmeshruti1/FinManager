@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Personal Finance Manager
 
 A modern, full-stack Personal Finance Manager built with a vanilla HTML/CSS/JS frontend and a FastAPI backend powered by Supabase.
@@ -66,3 +67,7 @@ The frontend is built with pure Vanilla JavaScript, HTML, and CSS, so no build s
 2. Open your browser and navigate to `http://localhost:5500/index.html`.
 
 Enjoy managing your finances!
+=======
+# FinManager
+Personal Finance Manager: A modern, fast, and elegantly designed Personal Finance Manager built to help you regain control of your financial health.  Featuring a minimalist, responsive UI and a robust API, this application makes it effortless to log transactions, monitor category-based budgets, and visualize your spending habits in real-time.
+>>>>>>> 238feb898d8d0acb0cd50682729fa6b2ae9abc53
